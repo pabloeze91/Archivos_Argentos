@@ -1,0 +1,36 @@
+/* Mobile */
+@media screen and (max-width: 600px) {
+  html{
+    margin: 0;
+    padding: 0;
+  }
+  .menu-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+  .news {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width:768px) {
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .news {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width:768px) {
+  /* Para un mínimo de 768px se mantendrán los estilos definidos en style.css */
+}
